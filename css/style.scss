@@ -22,7 +22,10 @@ html {
         font-size: 12px;
     }
     @media (min-width: 1300px) and (max-width: 1531.98px){
-        font-size: 13px;
+        font-size: 12px;
+    }
+    @media (min-width: 1300px) and (max-width: 1531.98px){
+        font-size: 12px;
     }
 }
 
@@ -144,10 +147,11 @@ a, select , input , textarea , button{
     font-weight: 700;
 }
 
-
-.btn-1{
+.btn--1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .c--custom {
@@ -165,12 +169,10 @@ a, select , input , textarea , button{
             width: 70%;
             li{
                 a{
-                    color: $color_liteblack;
+                    color: #4D4D4D;
                 }
                 &:last-child{
-                    text-decoration: none;
                     padding: 0.1rem 2rem;
-                    cursor: pointer;
                     box-shadow: 0 0.4rem 0 0 #7FC677;
                     border: 0.125rem solid #7FC677;
                     border-radius: .5rem;
@@ -194,9 +196,7 @@ a, select , input , textarea , button{
             }
             a{
                 color: $color_black;
-                text-decoration: none;
                 padding: 0.625rem 13.75rem;
-                cursor: pointer;
                 box-shadow: 0 0.9375rem 0 0 #3b3b3b;
                 border: 0.3125rem solid #3b3b3b;
                 // border-bottom: 20px solid #3B3B3B;
@@ -209,5 +209,69 @@ a, select , input , textarea , button{
                 width: 36rem;
             }
         }
+    }
+}
+
+.feature{
+    margin-top: 10rem;
+    .feature--card{
+        padding-right: 5rem;
+        border-radius: 1.75rem;
+    }
+    .card--green{
+        background-color: #A3E89B;
+        .green--text{
+            padding: 3.5rem 0 3.5rem 5rem;
+            h2, p {
+                color: #377932;
+            }
+        }
+    }
+    .card--blue{
+        background-color: #B2C3F2;
+        .blue--text{
+            padding: 1rem 0 1.5rem 5rem;
+            h2, p {
+                color: #3268FB;
+            }
+        }
+    }
+    .card--purple{
+        background-color: #D1B5F5;
+        .purple--text{
+            padding: 1rem 0 1.5rem 5rem;
+            h2, p {
+                color: #9543FF;
+            }
+        }
+    }
+}
+
+.getapps{
+    margin-top: 15rem;
+    a{
+        color: $color_black;
+        padding: 0.625rem 4.5rem;
+        box-shadow: 0 0.75rem 0 0 #3b3b3b;
+        border: 0.3125rem solid #3b3b3b;
+        // border-bottom: 20px solid #3B3B3B;
+        border-radius: 1rem;
+    }
+    .getapps--left{
+        padding: 0 0 7rem 7rem;
+    }
+    .getapps--right{
+        padding-top: 10rem;
+    }
+    hr{
+        position: relative;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border-top: 2px solid #707070;
+        height: 2rem;
+        width: 35rem;
+        transform: rotate(-30deg);
     }
 }
