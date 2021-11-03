@@ -1,0 +1,213 @@
+@import './variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    @media (max-width: 575.98px) {
+        font-size: 12px;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 1300px) and (max-width: 1531.98px){
+        font-size: 13px;
+    }
+}
+
+body {
+    font-family: $font1;
+    background-color: $color_white;
+    color: $color_liteblack;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all 0.3s ease-in-out;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+}
+
+ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+a{
+	margin:0;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+a, select , input , textarea , button{
+	outline: none !important;
+}
+
+.btn:focus, .btn.focus, .form-control:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-link:focus, .btn-link.focus {
+    text-decoration: none;
+}
+
+/*fonts*/
+.reg--40{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.reg--55{
+    font-size: 3.4375rem;
+    font-weight: 500;
+}
+
+.reg--36{
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.bold--18{
+    font-family: $font2;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.bold--22{
+    font-family: $font2;
+    font-size: 1.375rem;
+    font-weight: 700;
+}
+
+.bold--32{
+    font-family: $font2;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bold--34{
+    font-family: $font2;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.bold--36{
+    font-family: $font2;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.bold--50{
+    font-family: $font2;
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.bold--40{
+    font-family: $font2;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.bold--43{
+    font-family: $font2;
+    font-size: 2.6875rem;
+    font-weight: 700;
+}
+
+.bold--56{
+    font-family: $font2;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.bold--80{
+    font-family: $font2;
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+
+.btn-1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+.c--custom {
+    padding: 0 6rem;
+}
+
+/* header starts */
+.header{
+    .header--nav{
+        .navbar-brand{
+            color: $color_liteblack;
+        }
+        .menu{
+            justify-content: space-between;
+            width: 70%;
+            li{
+                a{
+                    color: $color_liteblack;
+                }
+                &:last-child{
+                    text-decoration: none;
+                    padding: 0.1rem 2rem;
+                    cursor: pointer;
+                    box-shadow: 0 0.4rem 0 0 #7FC677;
+                    border: 0.125rem solid #7FC677;
+                    border-radius: .5rem;
+                    a{
+                        color: #5A5757;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero{
+    .hero--content{
+        @include flexCenter;
+        min-height: 50rem;
+        .left{
+            width: 50%;
+            h1{
+                margin-bottom: 5rem;;
+            }
+            a{
+                color: $color_black;
+                text-decoration: none;
+                padding: 0.625rem 13.75rem;
+                cursor: pointer;
+                box-shadow: 0 0.9375rem 0 0 #3b3b3b;
+                border: 0.3125rem solid #3b3b3b;
+                // border-bottom: 20px solid #3B3B3B;
+                border-radius: 1rem;
+            }
+        }
+        .right{
+            width: 50%;
+            img{
+                width: 36rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.ttf');
+}
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../fonts/Helvetica-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Herculanum';
+    src: url('../fonts/Herculanum-Regular.ttf');
+}
+
+:root {
+    --color_white: #FFFFFF;
+    --color_litegreen: #B0EDA9;
+    --color_green: #3B9B31;
+    --color_darkgreen: #165D13;
+    --color_litepurple: #AE75F7;
+    --color_purple: #9543FF;
+    --color_pink: #F6D1FF;
+    --color_litepink: #FCEFFF;
+    --color_liteblue: #E8EDFF;
+    --color_blue: #3268FC;
+    --color_liteblack: #141414;
+    --color_black: #000000;
+
+    --font1: 'Helvetica', sans-serif;
+    --font2: 'HelveticaBold', sans-serif;
+    --font3: 'Herculanum', sans-serif;
+}
+
+$color_white: var(--color_white);
+$color_litegreen: var(--color_litegreen);
+$color_green: var(--color_green);
+$color_darkgreen: var(--color_darkgreen);
+$color_litepurple: var(--color_litepurple);
+$color_purple: var(--color_purple);
+$color_pink: var(--color_pink);
+$color_litepink: var(--color_litepink);
+$color_liteblue: var(--color_liteblue);
+$color_blue: var(--color_blue);
+$color_liteblack: var(--color_liteblack);
+$color_black: var(--color_black);
+
+
+$font1: var(--font1);
+$font2: var(--font2);
+$font3: var(--font3);
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
