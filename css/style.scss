@@ -109,12 +109,24 @@ a, select , input , textarea , button{
     font-family: $font2;
     font-size: 1.375rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 1rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 1rem;
+    }
 }
 
 .bold--32{
     font-family: $font2;
     font-size: 2rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 1.5rem;
+    }
 }
 
 .bold--34{
@@ -160,6 +172,9 @@ a, select , input , textarea , button{
     font-family: $font2;
     font-size: 2.6875rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 2rem;
+    }
 }
 
 .bold--56{
@@ -199,14 +214,16 @@ a, select , input , textarea , button{
 .c--custom {
     padding: 0 6rem;
     @media (max-width: 575.98px) {
-        padding: 0 3rem;
+        padding: 0 1.5rem;
+    }
+    @media (max-width: 320px) {
+        padding: 0 1rem;
     }
     @media (min-width: 992px) and (max-width: 1299.98px) {
         padding: 0 3rem;
     }
 }
 
-/* header starts */
 .header{
     .header--nav{
         .navbar-brand{
@@ -445,6 +462,150 @@ a, select , input , textarea , button{
         }
         @media (max-width: 991.98px) {
             transform: rotate(0deg);
+        }
+    }
+}
+
+.more{
+    margin-top: 20rem;
+    .feature--card{
+        min-height: 45rem;
+        padding: 2rem;
+        border-radius: 1.75rem;
+        @media (max-width: 575.98px) {
+            padding: 1.5rem;
+            min-height: auto;
+        }
+    }
+    .card--purple{
+        background-color: #D1B5F5;
+        .purple--text{
+            @media (max-width: 575.98px) {
+            }
+            h2, p, h3 {
+                color: #9543FF;
+            }
+        }
+    }
+    .card--blue{
+        background-color: #B2C3F2;
+        .blue--text{
+            @media (max-width: 575.98px) {
+            }
+            h2, p, h3 {
+                color: #3268FC;
+            }
+        }
+    }
+    .card--green{
+        background-color: #B0EDA9;
+        .green--text{
+            @media (max-width: 575.98px) {
+            }
+            h2, p, h3 {
+                color: #165D13;
+            }
+        }
+    }
+}
+
+.try{
+    margin-top: 15rem;
+    @media (max-width: 575.98px) {
+        margin-top: 10rem;
+    }
+    .try--content{
+        @include flexCenter;
+        @media (max-width: 575.98px) {
+            width: 100%;
+            flex-direction: column;
+        }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            width: 100%;
+            flex-direction: column;
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            width: 100%;
+           flex-direction: column;
+        }
+        .try--card{
+            width: 25%;
+            color: #3268FC;
+            padding: 3rem 1rem;
+            background-color: #E8EDFF;
+            box-shadow: 0 0.75rem 0 0 #3164EA;
+            border: 0.3125rem solid #3164EA;
+            border-radius: 1rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                width: 100%;
+            }
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                width: 100%;
+            }
+            h2{
+                font-size: 5.5rem;
+                font-weight: 900;
+            }
+            ul{
+                li{
+                    @media (min-width: 992px) and (max-width: 1299.98px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        .try--text{
+            width: 75%;
+            @media (max-width: 575.98px) {
+                width: 100%;
+                margin-top: 3rem;
+            }
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                width: 100%;
+                margin-top: 3rem;
+            }
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                width: 100%;
+                margin-top: 3rem;
+            }
+            ul{
+                @include flexCenter;
+                flex-direction: column;
+                li{
+                    background-color: #F6D1FF;
+                    padding: .5rem 1rem;
+                    border-radius: 1rem;
+                    -webkit-text-stroke-width: 0.0625rem;
+                    -webkit-text-stroke-color: #707070;
+                    @media (max-width: 575.98px) {
+                        font-size: 1.5rem;
+                    }
+                    @media (min-width: 992px) and (max-width: 1299.98px) {
+                        font-size: 1.5rem;
+                    }
+                    &:nth-child(odd){
+                        background-color: #CEF5C9;
+                    }
+                }
+            }
+            .try--button{
+                a{
+                    color: $color_black;
+                    padding: 0.625rem 12rem;
+                    box-shadow: 0 0.75rem 0 0 #3b3b3b;
+                    border: 0.3125rem solid #3b3b3b;
+                    border-radius: 1rem;
+                    @media (max-width: 575.98px) {
+                        padding: 0.625rem 5rem;
+                    }
+                    @media (min-width: 992px) and (max-width: 1299.98px) {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
         }
     }
 }
