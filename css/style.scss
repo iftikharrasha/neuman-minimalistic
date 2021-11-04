@@ -80,6 +80,18 @@ a, select , input , textarea , button{
 .reg--55{
     font-size: 3.4375rem;
     font-weight: 500;
+    @media (max-width: 575.98px) {
+        font-size: 1.75rem;
+    }
+    @media (max-width: 320px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 321px) and (max-width: 376px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 3rem;
+    }
 }
 
 .reg--36{
@@ -109,12 +121,24 @@ a, select , input , textarea , button{
     font-family: $font2;
     font-size: 2.125rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 1.4rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 1.5rem;
+    }
 }
 
 .bold--36{
     font-family: $font2;
     font-size: 2.25rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 1.5rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 1.5rem;
+    }
 }
 
 .bold--50{
@@ -127,6 +151,9 @@ a, select , input , textarea , button{
     font-family: $font2;
     font-size: 2.5rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 1.5rem;
+    }
 }
 
 .bold--43{
@@ -139,12 +166,27 @@ a, select , input , textarea , button{
     font-family: $font2;
     font-size: 3.5rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 3rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 2.5rem;
+    }
 }
 
 .bold--80{
     font-family: $font2;
     font-size: 5rem;
     font-weight: 700;
+    @media (max-width: 575.98px) {
+        font-size: 2.5rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 3.5rem; 
+    }
+    @media (max-width: 320px) {
+        font-size: 2rem;
+    }
 }
 
 .btn--1{
@@ -156,6 +198,12 @@ a, select , input , textarea , button{
 
 .c--custom {
     padding: 0 6rem;
+    @media (max-width: 575.98px) {
+        padding: 0 3rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        padding: 0 3rem;
+    }
 }
 
 /* header starts */
@@ -167,17 +215,47 @@ a, select , input , textarea , button{
         .menu{
             justify-content: space-between;
             width: 70%;
+            @media (max-width: 1299.98px) {
+                width: 100%;
+            }
             li{
                 a{
                     color: #4D4D4D;
+                    @media (min-width: 992px) and (max-width: 1299.98px) {
+                        font-size: 1.2rem;
+                    }
                 }
                 &:last-child{
                     padding: 0.1rem 2rem;
                     box-shadow: 0 0.4rem 0 0 #7FC677;
                     border: 0.125rem solid #7FC677;
                     border-radius: .5rem;
+                    @media (max-width: 575.98px) {
+                        width: 50%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    @media (max-width: 320px) {
+                        width: 65%;
+                    }
+                    @media (min-width: 321px) and (max-width: 376px) {
+                        width: 60%;
+                    }
+                    @media (min-width: 576px) and (max-width: 767.98px) {
+                        width: 30%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    @media (min-width: 768px) and (max-width: 991.98px) {
+                        width: 30%;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
                     a{
                         color: #5A5757;
+                        @media (min-width: 992px) and (max-width: 1299.98px) {
+                            font-size: 1rem;
+                        }
                     }
                 }
             }
@@ -189,24 +267,79 @@ a, select , input , textarea , button{
     .hero--content{
         @include flexCenter;
         min-height: 50rem;
+        @media (max-width: 575.98px) {
+            flex-direction: column;
+            min-height: auto;
+        }
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            flex-direction: column;
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            flex-direction: column;
+        }
+        @media (min-width: 992px) and (max-width: 1299.98px) {
+            min-height: 45rem;
+        }
         .left{
             width: 50%;
+            @media (max-width: 575.98px) {
+                width: 100%;
+                text-align: center;
+                padding: 5rem 0;
+            }
+            
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                width: 100%;
+                text-align: center;
+                padding: 5rem 0;
+            }
+            
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                width: 100%;
+                text-align: center;
+                padding: 5rem 0;
+            }
             h1{
-                margin-bottom: 5rem;;
+                margin-bottom: 5rem;
+                @media (max-width: 575.98px) {
+                    margin-bottom: 3rem;
+                }
             }
             a{
                 color: $color_black;
-                padding: 0.625rem 13.75rem;
+                padding: 0.625rem 12rem;
                 box-shadow: 0 0.9375rem 0 0 #3b3b3b;
                 border: 0.3125rem solid #3b3b3b;
                 // border-bottom: 20px solid #3B3B3B;
                 border-radius: 1rem;
+                @media (max-width: 575.98px) {
+                    padding: 0.45rem 3rem;
+                    box-shadow: 0 0.5rem 0 0 #3b3b3b;
+                }
+                @media (min-width: 992px) and (max-width: 1299.98px) {
+                    padding: 0.625rem 6rem;
+                }
             }
         }
         .right{
             width: 50%;
+            @media (max-width: 575.98px) {
+                width: 100%;
+                text-align: center;
+            }
+            @media (min-width: 576px) and (max-width: 767.98px) {
+                width: 100%;
+                text-align: center;
+            }
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                width: 100%;
+                text-align: center;
+            }
             img{
                 width: 36rem;
+                @media (max-width: 575.98px) {
+                    width: 80%;
+                }
             }
         }
     }
@@ -217,11 +350,17 @@ a, select , input , textarea , button{
     .feature--card{
         padding-right: 5rem;
         border-radius: 1.75rem;
+        @media (max-width: 575.98px) {
+            padding-right: 3rem;
+        }
     }
     .card--green{
         background-color: #A3E89B;
         .green--text{
             padding: 3.5rem 0 3.5rem 5rem;
+            @media (max-width: 575.98px) {
+                padding: 3.5rem 0 3.5rem 3rem;
+            }
             h2, p {
                 color: #377932;
             }
@@ -231,6 +370,9 @@ a, select , input , textarea , button{
         background-color: #B2C3F2;
         .blue--text{
             padding: 1rem 0 1.5rem 5rem;
+            @media (max-width: 575.98px) {
+                padding: 3.5rem 0 3.5rem 3rem;
+            }
             h2, p {
                 color: #3268FB;
             }
@@ -240,6 +382,9 @@ a, select , input , textarea , button{
         background-color: #D1B5F5;
         .purple--text{
             padding: 1rem 0 1.5rem 5rem;
+            @media (max-width: 575.98px) {
+                padding: 3.5rem 0 3.5rem 3rem;
+            }
             h2, p {
                 color: #9543FF;
             }
@@ -249,6 +394,12 @@ a, select , input , textarea , button{
 
 .getapps{
     margin-top: 15rem;
+    @media (max-width: 991.98px) {
+        margin-top: 10rem;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        margin-top: 12rem;
+    }
     a{
         color: $color_black;
         padding: 0.625rem 4.5rem;
@@ -259,9 +410,25 @@ a, select , input , textarea , button{
     }
     .getapps--left{
         padding: 0 0 7rem 7rem;
+        @media (max-width: 575.98px) {
+            padding: 0 0 5rem 0;
+            text-align: center;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            padding: 0 0 7rem 0;
+            text-align: center;
+        }
     }
     .getapps--right{
         padding-top: 10rem;
+        @media (max-width: 575.98px) {
+            padding-top: 1rem;
+            text-align: center;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            padding-top: 3rem;
+            text-align: center;
+        }
     }
     hr{
         position: relative;
@@ -273,5 +440,11 @@ a, select , input , textarea , button{
         height: 2rem;
         width: 35rem;
         transform: rotate(-30deg);
+        @media (max-width: 575.98px) {
+            width: 20rem;
+        }
+        @media (max-width: 991.98px) {
+            transform: rotate(0deg);
+        }
     }
 }
