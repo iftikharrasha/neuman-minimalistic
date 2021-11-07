@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Neuman - 2</title>
+    <title>Neuman - 2.0</title>
     <link rel="icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/9dbb72da13.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header py-2">
+    <header class="header py-3">
             <div class="header--nav">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid c--custom">
@@ -25,21 +25,21 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ml-lg-auto mb-0 menu">
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--22" href="#">Home</a>
+                                    <a class="nav-link bold--22" href="#home">Home</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--22" href="#">How it Works</a>
+                                    <a class="nav-link bold--22" href="#how-it-works">How it Works</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--22" href="#">Features</a>
+                                    <a class="nav-link bold--22" href="#features">Features</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--22" href="#">App Store</a>
+                                    <a class="nav-link bold--22" href="#app-store">App Store</a>
                                 </li>
                                 <li class="nav-item ml-lg-4">
-                                    <a class="nav-link bold--22" href="#">Pricing</a>
+                                    <a class="nav-link bold--22" href="#pricing">Pricing</a>
                                 </li>
-                                <li class="nav-item ml-lg-4">
+                                <li class="nav-item ml-lg-4 mb-lg-0 mb-4">
                                     <a class="nav-link bold--18 btn--1" href="#">Log In / Sign Up</a>
                                 </li>
                             </ul>
@@ -49,7 +49,7 @@
             </div>
     </header>
 
-    <section class="hero" id="hero">
+    <section class="hero" id="home">
         <div class="container-fluid c--custom">
             <div class="hero--content">
                 <div class="left">
@@ -63,7 +63,7 @@
         </div>
     </section>
 
-    <section class="feature" id="feature">
+    <section class="feature" id="how-it-works">
         <div class="container-fluid c--custom">
             <div class="row">
                 <div class="col-lg-6 mb-5">
@@ -121,7 +121,7 @@
         </div>
     </section>
 
-    <section class="more" id="more">
+    <section class="more" id="features">
         <div class="container-fluid c--custom">
             <div class="row">
                 <div class="col-lg-4 mb-5 px-4">
@@ -195,7 +195,7 @@
         </div>
     </section>
 
-    <section class="try" id="try">
+    <section class="try" id="pricing">
         <div class="container-fluid c--custom">
             <div class="try--content">
                 <div class="try--card text-center">
@@ -272,7 +272,7 @@
         </div>
     </section>
 
-    <section class="appstore" id="getapps">
+    <section class="appstore" id="app-store">
         <div class="container-fluid c--custom">
             <div class="row">
                 <div class="col-lg-2 mt-lg-4 mt-0 mb-3 mb-lg-0">
@@ -350,7 +350,7 @@
         <div class="container-fluid c--custom">
             <div class="footer--contents">
                 <div class="footer--img">
-                    <img src="./img/nav2.png" alt="nav" class="img-fluid">
+                    <img src="./img/nav.png" alt="nav" class="img-fluid">
                 </div>
                 <div class="footer--links">
                     <div class="link--list">
@@ -393,6 +393,14 @@
             app_icon.style.display = 'none';
             app_details.style.display = 'block';
         })
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 5) {
+                $("header").addClass("stick");
+            } else {
+                $("header").removeClass("stick");
+            }
+        });
     </script>
 </body>
 </html>

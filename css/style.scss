@@ -226,7 +226,7 @@ a, select , input , textarea , button{
         padding: 0 1.5rem;
     }
     @media (max-width: 320px) {
-        padding: 0 1rem;
+        // padding: 0 1rem;
     }
     @media (min-width: 992px) and (max-width: 1299.98px) {
         padding: 0 3rem;
@@ -234,6 +234,13 @@ a, select , input , textarea , button{
 }
 
 .header{
+    background-color: #FFFFFF;
+    transition: all 0.2s ease 0s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999;
     .header--nav{
         .navbar-brand{
             color: $color_liteblack;
@@ -288,8 +295,14 @@ a, select , input , textarea , button{
         }
     }
 }
+.stick {
+    padding: 0.5rem 0 !important;
+    transition: all 0.2s ease 0s;
+    position: fixed;
+}
 
 .hero{
+    padding-top: 6rem;
     .hero--content{
         @include flexCenter;
         min-height: 50rem;
@@ -372,7 +385,8 @@ a, select , input , textarea , button{
 }
 
 .feature{
-    margin-top: 10rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .feature--card{
         padding-right: 5rem;
         border-radius: 1.75rem;
@@ -419,12 +433,13 @@ a, select , input , textarea , button{
 }
 
 .getapps{
-    margin-top: 15rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     @media (max-width: 991.98px) {
-        margin-top: 10rem;
+        padding-top: 10rem;
     }
     @media (min-width: 992px) and (max-width: 1299.98px) {
-        margin-top: 12rem;
+        padding-top: 12rem;
     }
     a{
         color: $color_black;
@@ -476,7 +491,8 @@ a, select , input , textarea , button{
 }
 
 .more{
-    margin-top: 20rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .feature--card{
         min-height: 45rem;
         padding: 2rem;
@@ -519,9 +535,10 @@ a, select , input , textarea , button{
 }
 
 .try{
-    margin-top: 15rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     @media (max-width: 575.98px) {
-        margin-top: 10rem;
+        padding-top: 10rem;
     }
     .try--content{
         @include flexCenter;
@@ -619,10 +636,15 @@ a, select , input , textarea , button{
 }
 
 .components{
-    margin-top: 15rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .feature--card{
         border-radius: 2.25rem;
-        @media (max-width: 575.98px) {
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            border-radius: 3rem;
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            border-radius: 3rem;
         }
     }
     .card--green{
@@ -723,7 +745,8 @@ a, select , input , textarea , button{
 }
 
 .appstore{
-    margin-top: 15rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     .nav-pills{
         .nav-link {
             color: #7B7979;
@@ -746,6 +769,12 @@ a, select , input , textarea , button{
         background-color: #F0F0F0;
         border-radius: 1.75rem;
         min-height: 54rem;
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            min-height: 50rem;
+        }
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            min-height: 50rem;
+        }
         .content--inside{
             @include flexCenter;
             justify-content: flex-start;
@@ -779,6 +808,7 @@ a, select , input , textarea , button{
             }
         }
         .content--details{
+            animation: fadeIn .5s;
             .content--single{
                 @include flexCenter;
                 justify-content: flex-start;
@@ -847,16 +877,24 @@ a, select , input , textarea , button{
                 }
             }
         }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     }
 }
 
 .footer{
-    margin-top: 15rem;
+    padding-top: 10rem;
     .footer--contents{
         @include flexCenter;
         justify-content: space-between;
         align-items: normal;
-        min-height: 50rem;
+        min-height: 45rem;
         @media (max-width: 575.98px) {
             min-height: auto;
         }

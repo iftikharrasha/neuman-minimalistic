@@ -348,16 +348,21 @@ a, select, input, textarea, button {
   }
 }
 
-@media (max-width: 320px) {
-  .c--custom {
-    padding: 0 1rem;
-  }
-}
-
 @media (min-width: 992px) and (max-width: 1299.98px) {
   .c--custom {
     padding: 0 3rem;
   }
+}
+
+.header {
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
 }
 
 .header .header--nav .navbar-brand {
@@ -439,6 +444,17 @@ a, select, input, textarea, button {
   .header .header--nav .menu li:last-child a {
     font-size: 1rem;
   }
+}
+
+.stick {
+  padding: 0.5rem 0 !important;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+  position: fixed;
+}
+
+.hero {
+  padding-top: 6rem;
 }
 
 .hero .hero--content {
@@ -585,7 +601,8 @@ a, select, input, textarea, button {
 }
 
 .feature {
-  margin-top: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .feature .feature--card {
@@ -654,18 +671,19 @@ a, select, input, textarea, button {
 }
 
 .getapps {
-  margin-top: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 @media (max-width: 991.98px) {
   .getapps {
-    margin-top: 10rem;
+    padding-top: 10rem;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1299.98px) {
   .getapps {
-    margin-top: 12rem;
+    padding-top: 12rem;
   }
 }
 
@@ -741,7 +759,8 @@ a, select, input, textarea, button {
 }
 
 .more {
-  margin-top: 20rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .more .feature--card {
@@ -782,12 +801,13 @@ a, select, input, textarea, button {
 }
 
 .try {
-  margin-top: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 @media (max-width: 575.98px) {
   .try {
-    margin-top: 10rem;
+    padding-top: 10rem;
   }
 }
 
@@ -959,11 +979,24 @@ a, select, input, textarea, button {
 }
 
 .components {
-  margin-top: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .components .feature--card {
   border-radius: 2.25rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .components .feature--card {
+    border-radius: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .components .feature--card {
+    border-radius: 3rem;
+  }
 }
 
 .components .card--green {
@@ -1128,7 +1161,8 @@ a, select, input, textarea, button {
 }
 
 .appstore {
-  margin-top: 15rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .appstore .nav-pills .nav-link {
@@ -1162,6 +1196,18 @@ a, select, input, textarea, button {
   background-color: #F0F0F0;
   border-radius: 1.75rem;
   min-height: 54rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .appstore .tab-content {
+    min-height: 50rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .appstore .tab-content {
+    min-height: 50rem;
+  }
 }
 
 .appstore .tab-content .content--inside {
@@ -1224,6 +1270,11 @@ a, select, input, textarea, button {
   .appstore .tab-content .content--inside .content--single p {
     font-size: 1rem;
   }
+}
+
+.appstore .tab-content .content--details {
+  -webkit-animation: fadeIn .5s;
+          animation: fadeIn .5s;
 }
 
 .appstore .tab-content .content--details .content--single {
@@ -1348,8 +1399,26 @@ a, select, input, textarea, button {
   }
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .footer {
-  margin-top: 15rem;
+  padding-top: 10rem;
 }
 
 .footer .footer--contents {
@@ -1368,7 +1437,7 @@ a, select, input, textarea, button {
   -webkit-box-align: normal;
       -ms-flex-align: normal;
           align-items: normal;
-  min-height: 50rem;
+  min-height: 45rem;
 }
 
 @media (max-width: 575.98px) {
